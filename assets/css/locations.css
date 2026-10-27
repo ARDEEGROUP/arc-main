@@ -1,0 +1,11 @@
+/* Locations page */
+.loc{display:flex;flex-direction:column;border-radius:var(--r-xl);background:var(--cream-2);overflow:hidden;min-width:0}
+.loc .photo{border-radius:0;aspect-ratio:16/10}
+.loc .status{position:absolute;bottom:14px;left:14px;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 12px;border-radius:100px;background:var(--cream);color:var(--forest)}
+.loc .status::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--olive);margin-right:8px;vertical-align:middle;animation:pulse 1.8s infinite}
+.loc-body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.loc-body .city{font-family:var(--italic);font-style:italic;font-size:20px;color:var(--terra)}
+.loc-body h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:30px;line-height:1}
+.loc-body p{font-size:14px;color:var(--muted);line-height:1.7}
+.loc-body .hrs{font-size:12px;font-weight:600;color:var(--olive)}
+.loc-body .btns{margin-top:auto;padding-top:10px}

@@ -1,0 +1,7 @@
+# Apache: serve /play (no slash, no .html) from /play/index.html
+Options -Indexes
+DirectorySlash Off
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^([a-z]+)/?$ /$1/index.html [L]

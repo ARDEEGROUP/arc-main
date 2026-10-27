@@ -1,0 +1,15 @@
+/* Sport rows (Play, Wellness, Gurugram map block) */
+.sport{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);align-items:stretch;border-radius:var(--r-xl);background:var(--cream-2);padding:clamp(12px,1.4vw,18px)}
+.sport + .sport{margin-top:16px}
+.sport .photo{min-height:340px}
+.sport-body{padding:clamp(14px,2.4vw,32px) clamp(10px,2vw,26px);display:flex;flex-direction:column;gap:16px}
+.sport-body .disp{font-size:clamp(36px,4.6vw,64px)}
+.specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.spec{border-radius:16px;background:var(--cream);padding:14px 16px}
+.spec b{display:block;font-family:var(--display);font-size:28px;line-height:1.05}
+.spec small{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--muted)}
+.howbook{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;padding-top:16px;border-top:1px solid var(--hair)}
+.howbook p{flex:1 1 220px;font-size:13px;color:var(--muted);line-height:1.6}
+.howbook p b{color:var(--ink)}
+.sport.flip .photo{order:2}
+@media(max-width:900px){.sport{grid-template-columns:1fr}.sport.flip .photo{order:0}.sport .photo{min-height:260px}}
